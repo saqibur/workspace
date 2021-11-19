@@ -7,7 +7,7 @@ function Randomize-Terminal-Background-Image {
     #       from different profiles.
     $Pics        = (Get-Childitem $BackgroundImagesDirectory).FullName
 
-
+    # TODO: Need to replace current filename with a dummy one to fall-back-to.
     $Raw           = Get-Content -Path $TermProfile -Raw
     $TerminalJson  = ConvertFrom-Json -InputObject $Raw
 
