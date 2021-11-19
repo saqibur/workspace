@@ -1,0 +1,6 @@
+cli-tools/musikcube
+cli-tools/youtube-dl/*.exe
+cli-tools/youtube-dl/downloads/*
+
+!cli-tools/.gitkeep
+!cli-tools/youtub-dl/downloads/.gitkeep
