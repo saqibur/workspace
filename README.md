@@ -23,7 +23,7 @@ Alternatively, we can use VSCode Portable.
 the [Windows Store]((https://aka.ms/terminal)), or using `winget`.
 
 ```PowerShell
-    winget Install Windows.Terminal
+winget Install Windows.Terminal
 ```
 
 2. Configure Windows Terminal
@@ -67,7 +67,7 @@ https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and
 `winget`.
 
 ```PowerShell
-    winget Install Microsoft.PowerShell
+winget Install Microsoft.PowerShell
 ```
 
 2. Edit or create the PowerShell profile. It should be in `$PROFILE`, aka,
@@ -87,11 +87,11 @@ https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and
         * [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
 
 ```PowerShell
-    Install-Module posh-git -Scope CurrentUser
-    Install-Module oh-my-posh -Scope CurrentUser
-    Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
-    Install-Module -Name Terminal-Icons -Repository PSGallery
-    Install-Module -Name z
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+Install-Module -Name Terminal-Icons -Repository PSGallery
+Install-Module -Name z
 ```
 
 
@@ -103,3 +103,11 @@ https://www.hanselman.com/blog/my-ultimate-powershell-prompt-with-oh-my-posh-and
 Note: Remember to add `musikcube` to PATH. Also, I've set a `music` alias for
 `musikcube`. And you might also want to grab [`ffmpeg`](https://www.ffmpeg.org/)
 for any audio-video conversion for `youtube-dl`.
+
+
+### Useful Functions to Remember
+```PowerShell
+Dl-Audio ([string] $AudioFormat, [string] $YouTubeLinkOrId)
+Dl-Mp3   ([string] $YouTubeLinkOrId)
+Dl-Video ([string] $YouTubeLinkOrId)
+```
